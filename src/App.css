@@ -1,0 +1,388 @@
+* {
+  /*font-family: Impact, Charcoal, sans-serif;*/
+  font-family: 'Avenir Next',sans-serif;
+  letter-spacing: 1px;
+  line-height: 25px;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+html, body 
+{
+  max-width: 100%;
+  overflow-x: hidden;
+  
+}
+
+/* TOP BANNER */
+#topBanner {
+  width: 100%;
+  height: 100px;
+  background-color: #00AAAF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: .5rem;
+  /* background-image: url(img/Jennifer\ C.\ Brooks\,\ MD.png);
+  background-position: center;
+  background-repeat: no-repeat; */
+}
+
+.pageTitle {
+  color: white;
+  font-size: 2rem;
+}
+
+.subTitle {
+  color: white;
+}
+
+/* MAIN MENU */
+.menuBar { /*centers menu bar on page*/
+  width: 70%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+#mobileMenuBtn,
+#mobileMenuWrapper,
+#mobileMenuExitBtn,
+.tabletMenuWrapper {
+  display: none;
+}
+
+.desktopMenu {
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  align-content: center;
+  gap: 1.875rem;
+}
+
+.desktopMenuItem {
+  white-space: nowrap;
+}
+
+nav li a {
+  text-decoration: none;
+  /* text-align: center;   */
+  width: 12.5rem;
+  padding: .625rem;
+  margin: .625rem;
+  color: #00AAAF;  
+}
+
+.desktopMenu li a, 
+.desktopMenu li a:visited {
+  color: #00AAAF;
+}
+
+.desktopMenu li a:hover {
+  color:#002b2c;
+  }
+
+/*DROP DOWN - HOME */
+.homeDropDown {
+  position: relative;
+}
+
+.homeDropDownContent {
+  display: none;  
+  position: absolute;
+  left: 0;
+  background-color: white;
+  width: 150px;
+  border: 1px solid #00AAAF;
+}
+
+.homeDropDownContent a {
+  display: block; 
+  text-decoration: none;
+  color: #00AAAF;
+  text-align: left;
+  padding: 10px;
+}
+
+.homeDropDownContent a:hover {
+  color: #002b2c;
+}
+
+.homeDropDown:hover .homeDropDownContent {
+  display: block;
+  width: max-content;
+}
+
+/* BANNER */
+.banner {
+  width:100%;
+  height: 25rem;
+  background-image: url(img/exclusive-top-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* */
+
+h2 {
+  color: #00AAAF;
+  font-weight: 800;
+}
+
+ul {
+  list-style: none;
+}
+
+.blueButton {
+  background-color: #DFF6F7;
+  color: #00AAAF;
+  border:#00AAAF 2px solid;
+  width: 300px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 600;
+}
+ 
+
+.blueButton:hover {
+  background-color: #00AAAF;
+  color: white;
+}
+.intro {
+  width: 60%;
+  margin: 20px auto;
+}
+
+/*TESTIMONIALS*/
+.testimonialWrapper {
+  background-color: #00AAAF;
+  width: auto;
+  height: 50px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.testimonialButton {
+  color: #00AAAF;
+  border-radius: 5%;
+  height: 40px;
+  width: 175px;
+  font-size: 18px;
+  background-color: white;
+  border: 2px solid #00AAAF;
+  padding: 5px;
+}
+
+.testimonialButton:hover {
+  background-color: white;
+  font-size: 22px;
+  color: #00AAAF;
+}
+
+.testimonialIntro {
+  color: white;
+  font-size: 1.25rem;
+}
+
+
+/*MANTRA*/
+.mantra {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.health,
+.beauty {
+  font-size:40px;
+}
+
+.health {
+  color: #63DFF7;
+}
+
+.beauty {
+  color:#00AAAF;
+}
+
+/*FEATURED SERVICES*/
+
+.featuredServiceWrapper {
+  text-align: center;
+  color: #524F4F;
+  background-color: #DFF6F7;
+  width: 75%;
+  margin: auto;
+  padding: 30px;
+}
+
+.featuredServiceWrapper h1 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.featuredServiceBody {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.featuredServiceBody img {
+  width: 200px;
+
+}
+
+.featuredServiceBody li {
+  font-size: 18px; 
+}
+
+.featuredServiceBody h2 { 
+  font-weight: 700;
+}
+
+/*ABOUT US*/
+.aboutUsWrapper {
+  background-color: #FAFAFA;
+  width: 75%;
+  margin: 50px auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutUsWrapper h1 {
+  text-align: center; 
+  padding: 30px;
+  font-size: 24px;
+}
+
+.aboutLeft img {
+  height:450px;
+}
+
+.aboutUsBody {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.aboutUsTitle {
+  font-size: 30px;
+}
+
+.providerPhoto {
+  border-radius: 50%;
+}
+
+.aboutRight {
+  margin: 0px 0px;
+  width: 40%;
+}
+
+/*FOOTER*/
+
+.footer {
+  width:75%;
+  margin: 0 auto; 
+  display: flex;
+}
+
+.footerWrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px
+
+}
+
+.footerLeft,
+.footerRight,
+.footerCenter {
+  flex-basis: 30%;
+
+}
+
+.footerLeft {
+  text-align: center;
+}
+
+.footerCenter {
+  /* width: 400px; */    
+}
+
+.freezeTitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: #00AAAF;
+  margin: 10px auto;
+}
+
+
+.footerInfo {
+  border-bottom: 2px solid #E3B210 ;
+}
+
+
+/* VAGINAL REJUVENATION PAGE STYLE */
+
+
+
+html, body, .serviceBody {
+  height: auto;
+}
+
+
+.header {
+  background-color: #00AAAF;
+  color: white;
+  font-size: 40px;
+  padding: 20px 200px;
+  margin: 20px auto 0px;
+}
+
+.serviceBody {
+  display: flex;
+  width: 75%;
+  margin: auto;
+  gap: 50px;
+}
+
+.serviceLeft {
+  width: 900px;
+}
+.serviceRight {
+  width: 400px;
+  height: auto;
+  background-color: #DFF6F7;
+  text-align: center;
+}
+
+table, td {
+  border-collapse: collapse;
+  border: 2px solid #00AAAF;
+  margin: auto;
+  padding: 10px;
+}
+
+table {
+  border-style: hidden;
+}
+
+.serviceLeft h2,
+.serviceRight h2 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
